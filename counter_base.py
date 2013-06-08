@@ -3,13 +3,11 @@ import os
 import global_define
 import time
 import datetime
+from pycommon.pypickle import pickle_dump, pickle_load
 
 class CounterBase:
     def __init__(self):
         pass
-
-    def dump(self, file_path):
-        pickle_dump(self.__dict, file_path)
 
     """
     def _insert(self, _table_name, _schema_list, _value_list, _log_day):
