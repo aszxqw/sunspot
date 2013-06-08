@@ -25,10 +25,6 @@ class SumCounter(CounterBase, CounterInterface):
         self.__dict = {}
         for key in  self.__keys:
             self.__dict.setdefault(key, 0)
-        pass
-
-    def dump(self, file_path):
-        pickle_dump(self.__dict, file_path)
 
     def _count_line(self, _list):
         for i, _val in enumerate(_list):
